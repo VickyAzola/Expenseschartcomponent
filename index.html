@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+</head>
+<body>
+  <main>
+    <section class="balance">
+      <h1><span>My balance</span><br>$921.48</h1>
+      <img src="images/logo.svg" alt="Logo">
+    </section>
+
+    <section class="spending">
+      <h2>Spending - Last 7 days</h2>
+
+      <div class="chartContainder">
+        <canvas id="chart" aria-label="Expenses chart" role="img"></canvas>
+      </div>
+
+      <div class="total">
+        <h3><span>Total this month</span><br>$478.33</h3>
+        <p>+2.4%<br><span>from last month</span></p>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/VickyAzola/Expenseschartcomponent" target="_blank">Victoria Azola</a>.</p>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="module" src="index.js"></script>
+</html>
