@@ -26,10 +26,11 @@ const spendingChart = document.getElementById('chart');
             datasets: [{
                 label: '',
                 data: data.map(row => row.amount),
-                borderWidth: 1,
                 backgroundColor: '#ec775f',
-                borderRadius: 5,
-                inflateAmount: 2,
+                borderRadius: 12,
+                borderWidth: 6,
+                borderColor: '#fffcf7',
+                inflateAmount: 6,
                 hoverBackgroundColor: '#76b5bc',
             }],
         },
@@ -38,6 +39,7 @@ const spendingChart = document.getElementById('chart');
                 x: {
                     ticks: {
                         color: '#93867b',
+                        padding: 6,
                         font: {
                             weight: 'lighter'
                         },
@@ -49,7 +51,8 @@ const spendingChart = document.getElementById('chart');
                 },
                 y: {
                     ticks: {
-                        display: false
+                        display: false,
+                        drawTicks: false
                     },
                     grid: {
                         display: false,
